@@ -67,3 +67,5 @@ function addListAfterKeypress(event) {
 button.addEventListener("click", addListAfterClick);
 
 input.addEventListener("keypress", addListAfterKeypress);
+
+// Find out how to persist the data - when I reload the page, the list items should not reset, they should load from cookies. 

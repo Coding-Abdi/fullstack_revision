@@ -1,4 +1,4 @@
-var css = document.querySelector("h3");
+var infoText = document.querySelector(".infoText");
 var color1 = document.querySelector(".color1");
 var color2 = document.querySelector(".color2");
 var body = document.getElementById("gradient");
@@ -10,12 +10,12 @@ function setGradient() {
     + color2.value 
     + ")";
 
-    css.textContent = body.style.background + ";";
+    infoText.textContent = body.style.background;
 }
 
 color1.addEventListener("input", setGradient);
 
 color2.addEventListener("input", setGradient);
-   
 
+// Learn how to render this in React - interview tip
 
