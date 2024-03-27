@@ -16,6 +16,7 @@ function ReducerTwo () {
 
    const handleClick = () => {
     dispatch({ type: "INCREMENT" });
+    dispatch({ type: "toggleShowText"})
 }
 
     return(
@@ -28,8 +29,3 @@ function ReducerTwo () {
 };
 
 export default ReducerTwo;
-
-// The handleClick function on line 17, should only increase the counter as we are only dispatching the "INCREMENT" action on line 5. We are not dispatching the 'toggleShowText' action on line 7, but that is incorrectly activating as well.
-
-// case "toggleShowText": 
-// return { count: state.count, showText: !state.showText }
