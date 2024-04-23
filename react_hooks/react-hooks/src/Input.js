@@ -5,15 +5,15 @@ function Input () {
 
     const handleChange = (event) => {
         const newValue = event.target.value
-        setInputValue(newValue)
-    }
+        setInputValue(newValue);
+    };
     
     return(
         <div>
             <input placeholder="input text..." onChange={handleChange} />
             {inputValue}
         </div>
-    )
-}
+    );
+};
 
 export default Input;

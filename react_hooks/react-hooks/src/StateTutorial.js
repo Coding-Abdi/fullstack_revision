@@ -5,14 +5,18 @@ function StateTutorial () {
 
     const increment = () => {
        setCounter(counter + 1);
+    }
 
-       }
+    const decrement = () => {
+       setCounter(counter - 1);
+    }
     
 
     return (
         <div> 
-            {counter}
             <button onClick={increment}>Increment</button>
+            {counter}
+            <button onClick={decrement}>Decrement</button>
         </div>
     )
 }
